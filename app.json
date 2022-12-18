@@ -1,0 +1,81 @@
+{
+      "name": "BAN ALL BOT",
+      "description": "A bot to fuck users",
+      "logo": "https://graph.org/file/bfbe50f5c5cee575b2053.jpg",
+      "keywords": [
+         "ban all bot",
+         "bot",
+         "Group",
+         "Telegram"         
+      ],   
+   "repository": "https://github.com/senpai80/banall",
+   "stack": "heroku-20",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "env": {
+      "TOKEN": {
+         "description": "Your bot token. Can be obtained from https://telegram.dog/BotFather/",
+         "required": true,
+         "value": "YOUR BOT_TOKEN"
+      },
+      "API_ID": {
+         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": "1634450"
+      },
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": "1a42e816cae8d86e71a4c466bba19b8c"
+      },     
+      "BOT_ID": {
+         "description": "your bot id",
+         "required": true,
+         "value": "-1001868905939"
+      },  
+      "BOT_USERNAME": {
+         "description": "your bot username without @",
+         "required": true,
+         "value": "StarkIndustry_21"
+      },  
+       "BOT_NAME": {
+         "description": "Your bot's name",
+         "required": true,
+         "value": "BAN ALL BOT"
+      },      
+      "SUDO": {
+         "description": "list of Auth user Id who can command the bot ",
+         "required": true,
+         "value": "1054295664"
+      }, 
+      "START_IMG": {
+         "description": "give the telegraph link of your network logo.",
+         "required": true,
+         "value": "https://graph.org/file/bfbe50f5c5cee575b2053.jpg"
+      },     
+      "ENV": {
+         "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
+         "value": "ANYTHING"
+      }           
+  },
+       "buildpacks": [ 
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-python"
+        }, 
+        { 
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
