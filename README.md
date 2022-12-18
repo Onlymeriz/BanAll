@@ -35,8 +35,8 @@
 $ sudo apt upgrade
 $ sudo apt install python3-pip
 $ git clone https://github.com/senpai80/BanAll
-$ cd <ʀᴇᴘᴏ ɴᴀᴍᴇ>
-$ pip3 install -U -r requirements.txt
+$ cd BanAll
+$ pip3 install -r requirements.txt
 $ python3 -m BanAll 
 ```
  
